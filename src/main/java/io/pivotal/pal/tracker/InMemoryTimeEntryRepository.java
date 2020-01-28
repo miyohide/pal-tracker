@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.util.*;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
-    private HashMap<Long, TimeEntry> repo = new HashMap<>();
+    private Map<Long, TimeEntry> repo = new HashMap<>();
     Long autoID = 0L;
 
     @Override
