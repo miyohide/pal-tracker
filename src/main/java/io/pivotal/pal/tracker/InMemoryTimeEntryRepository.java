@@ -1,6 +1,5 @@
 package io.pivotal.pal.tracker;
 
-import java.sql.Time;
 import java.util.*;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
@@ -23,8 +22,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     @Override
     public List<TimeEntry> list() {
         Collection<TimeEntry> values = repo.values();
-        List<TimeEntry> result = new ArrayList<>(values);
-        return result;
+        return new ArrayList<>(values);
     }
 
     @Override
